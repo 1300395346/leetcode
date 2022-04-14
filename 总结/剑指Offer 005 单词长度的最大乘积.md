@@ -12,7 +12,8 @@
 
         代码如下：
 
-```
+```java
+Class Solution{
     public int maxProduct(String[] words) {
         int len = words.length;
         int ans = 0;
@@ -46,6 +47,7 @@
         }
         return ans;
     }
+}
 ```
 
 结果：超出时间限制；最后执行输入：省略；
@@ -56,8 +58,9 @@
 
 代码如下：
 
-```
-    public int maxProduct(String[] words){
+```java
+Class Solution{
+        public int maxProduct(String[] words){
         int len = words.length;
         int[] binary = new int[len];
         for (int i =0; i < len; i++){
@@ -77,8 +80,7 @@
         }
         return ans;
     }
+}
 ```
 
 结果：通过；时间复杂度为O(L+n^2) L为数组words中所有字符串的总长度
-
-

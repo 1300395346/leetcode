@@ -1,5 +1,3 @@
-import java.nio.channels.Channel;
-
 public class Offer005 {
     public static void main(String[] args) {
         Offer005 offer005 = new Offer005();

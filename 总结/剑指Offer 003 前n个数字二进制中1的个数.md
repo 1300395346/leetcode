@@ -12,7 +12,7 @@
 
 代码如下：
 
-```
+```java
 class Solution {
     public int[] countBits(int n) {
         int[] result = new int[n+1];
@@ -46,7 +46,7 @@ class Solution {
 
     代码如下：
 
-```
+```java
 class Solution {
     public int[] countBits(int n) {
         int[] result = new int[n+1];
@@ -75,13 +75,16 @@ class Solution {
 - 这时i中存储了每两位的统计结果，可以进行两两相加，最后求和。
 
 - 第一步：两个bit计算1的数量：`0b11: 0b01 + 0b01 = 0b10 = 2`, `0b10: 0b00 + 0b01 = 0b01 = 1`。研究发现：`2=0b11-0b1`，`1=0b10-0b1`,可以减少一次位于计算：`i = i - ((i >>> 1) & 0x55555555)`
+
 - 第二步：暂时没有好的优化方法
+
 - 第三步：实际是计算每个byte中的1的数量，最多8（0b1000）个，占4bit，可以最后进行位与运算消位，减少一次`&`运算：`i = (i + (i >>> 4)) & 0x0f0f0f0f`
+
 - 第四,五步：同上理由，可以最后消位。但是由于int最多32（0b100000）个1，所以这两步可以不消位，最后一步把不需要的bit位抹除就可以了：`i & 0x3f`
 
 算法原型：
 
-```
+```java
 public static int bitCount(int i) {
     i = (i & 0x55555555) + ((i >>> 1) & 0x55555555);
     i = (i & 0x33333333) + ((i >>> 2) & 0x33333333);
@@ -94,7 +97,7 @@ public static int bitCount(int i) {
 
 代码实现如下：
 
-```
+```java
 class Solution {
     public int[] countBits(int n){
         int[] result = new int[n+1];
@@ -111,5 +114,3 @@ class Solution {
     }
 }
 ```
-
-

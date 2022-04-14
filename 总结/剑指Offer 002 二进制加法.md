@@ -16,7 +16,7 @@
 
 初见思路：将a，b两个01字符串划分成单个字符，然后根据二进制加法的规则进行计算，注意：1+1=0，同时要高位进1。 
 
-```
+```java
 class Solution {
         public String addBinary(String a, String b) {
         int i = a.length() - 1;
@@ -45,10 +45,8 @@ class Solution {
 
 修改后代码：
 
-```
+```java
 int sum = A + B + carry;
 ```
 
 结果：通过
-
-

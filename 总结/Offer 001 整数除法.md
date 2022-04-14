@@ -11,7 +11,7 @@
 
 初见思路：计算除数b连续加自身，加到第几次时大于被除数a，此时的次数即为商。（可以预见一定是超时的。）
 
-```
+```java
 class Solution {
     public int divide(int a, int b) {
         if(a==0) return 0;
@@ -40,7 +40,7 @@ class Solution {
 
 修改后代码如下：
 
-```
+```java
 class Solution {
     public int divide(int a, int b) {
         if(a==0) return 0;
@@ -75,7 +75,7 @@ class Solution {
 
 根据上图，写出的代码如下：
 
-```
+```java
 class Solution {
     public int divide(int a, int b){
         if (a == 0 || b==-2147483648) return 0;
@@ -126,7 +126,7 @@ class Solution {
 
 修改策略：在while循环中多增加一个判断(b<<i)!=Integer.MIN_VALUE
 
-```
+```java
     private int getMaxShift(int a, int b) {
         int i = 0;
         while ((b << i) < a &&(b << i) != Integer.MIN_VALUE){
@@ -144,7 +144,7 @@ class Solution {
 
 修改后代码如下：
 
-```
+```java
 class Solution {
     public int divide(int a,int b){
         if (a == Integer.MAX_VALUE && b == -1) return Integer.MIN_VALUE;
@@ -202,7 +202,7 @@ class Solution {
 
 修改后代码：
 
-```
+```java
   if (a == Integer.MAX_VALUE && b == -1) return Integer.MIN_VALU
 ```
 
@@ -212,7 +212,7 @@ class Solution {
 
 修改后代码：
 
-```
+```java
 while (temp <= b){
             while (temp > (b << shift)){
                 shift--;
@@ -232,7 +232,7 @@ while (temp <= b){
 
 修改后代码如下：
 
-```
+```java
 class Solution {
     public int divide(int a,int b){
         if (a == Integer.MIN_VALUE && b == -1) return Integer.MAX_VALUE;
