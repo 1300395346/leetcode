@@ -13,7 +13,7 @@
         代码如下：
 
 ```java
-Class Solution{
+class Solution{
     public int maxProduct(String[] words) {
         int len = words.length;
         int ans = 0;
@@ -59,7 +59,7 @@ Class Solution{
 代码如下：
 
 ```java
-Class Solution{
+class Solution{
         public int maxProduct(String[] words){
         int len = words.length;
         int[] binary = new int[len];

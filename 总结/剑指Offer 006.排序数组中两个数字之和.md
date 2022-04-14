@@ -15,7 +15,7 @@
 代码如下：
 
 ```java
-Class Solution{    
+class Solution{    
     public int[] twoSum(int[] numbers, int target) {
         HashMap<Integer,Integer> map = new HashMap<>();
         int[] result = new int[2];
@@ -47,7 +47,7 @@ Class Solution{
 代码如下：
 
 ```java
-Class Solution{
+class Solution{
     public int[] twoSum(int[] numbers, int target){
         int i = 0;//头部指针
         int j = numbers.length-1;//尾部指针
