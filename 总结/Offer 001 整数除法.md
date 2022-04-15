@@ -69,9 +69,9 @@ class Solution {
 
 未曾想到其他思路，因此参考题解
 
-![整数除法.png](https://pic.leetcode-cn.com/1643716802-McpMhm-%E6%95%B4%E6%95%B0%E9%99%A4%E6%B3%95.png)
-
 了解到：当某个数向右移动一位，意味着这个数乘以2，而当1向右移动n位，意味着求2的n次方。
+
+![offer001.jpg](C:\Users\86189\Desktop\leetcode\总结\offer001.jpg)
 
 根据上图，写出的代码如下：
 
