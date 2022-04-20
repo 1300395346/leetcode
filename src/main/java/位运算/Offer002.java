@@ -1,3 +1,5 @@
+package 位运算;
+
 public class Offer002 {
     public static void main(String[] args) {
         Offer002 offer002 = new Offer002();

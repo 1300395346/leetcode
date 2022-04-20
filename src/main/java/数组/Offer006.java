@@ -1,5 +1,6 @@
+package 数组;
+
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class Offer006 {
     public static void main(String[] args) {

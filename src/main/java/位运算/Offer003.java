@@ -1,3 +1,5 @@
+package 位运算;
+
 import java.util.Arrays;
 
 public class Offer003 {

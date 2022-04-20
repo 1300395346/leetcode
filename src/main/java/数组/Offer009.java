@@ -1,3 +1,5 @@
+package 数组;
+
 public class Offer009 {
     public static void main(String[] args) {
         Offer009 offer009 = new Offer009();
