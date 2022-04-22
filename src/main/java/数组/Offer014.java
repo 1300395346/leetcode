@@ -2,10 +2,10 @@ package 数组;
 
 import java.util.Arrays;
 
-public class Offer14 {
+public class Offer014 {
     public static void main(String[] args) {
-        Offer14 offer14 = new Offer14();
-        boolean flag = offer14.checkInclusion("abc","cccbbbaaaaaaa");
+        Offer014 offer014 = new Offer014();
+        boolean flag = offer014.checkInclusion("abc","cccbbbaaaaaaa");
         System.out.println(flag);
     }
     public boolean checkInclusion(String s1, String s2) {
