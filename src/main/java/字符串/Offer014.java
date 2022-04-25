@@ -1,4 +1,4 @@
-package 数组;
+package 字符串;
 
 import java.util.Arrays;
 
