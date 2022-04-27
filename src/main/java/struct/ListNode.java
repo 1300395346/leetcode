@@ -6,6 +6,7 @@ public class ListNode {
 
     public ListNode(int val) {
         this.val = val;
+        next = null;
     }
 
     public ListNode(int val, ListNode next) {
@@ -13,15 +14,19 @@ public class ListNode {
         this.next = next;
     }
 
+    public ListNode() {
+        
+    }
+
     public void show() {
         ListNode currentNode = this;
         while (true) {
-            System.out.print(currentNode.val + " ");
-            currentNode = currentNode.next;
             if (currentNode == null) {
                 System.out.println();
                 break;
             }
+            System.out.print(currentNode.val + " ");
+            currentNode = currentNode.next;
         }
     }
 
